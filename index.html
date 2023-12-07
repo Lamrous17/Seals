@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Seals | Red Book</title>
+</head>
+<body>
+  <h1>Seals of the Red Book of Russia</h1>
+  <img src="logo.png" alt="The Red Book logo" id="logo">
+
+  <p>This is an annotated list of rare and endangered or extinct animals, plants and fungi.<br>
+      Some seal species are also on the verge of extinction. In this topic we will talk about them in more detail.</p>
+
+  <section>
+    <form class="" action="index.html" method="post">
+      <h3>Find a seal species</h3>
+      <section>
+        <label for="typeenter">What kind of seal are you interested in?</label>
+        <input type="text" name="typeenter">
+      </section>
+      <hr>
+
+      <section>
+        <label for="rarity">Specify the rarity category</label>
+        <br>
+        <span>An endangered species</span>
+        <input type="range" name="raritycategory" value="3" min="0" max="4">
+        <span>A rare species</span>
+      </section>
+      <hr>
+
+      <section>
+        <span>Types of seals from which area are you interested in?</span>
+        <br>
+        <input type="checkbox" name="spaces" id="first_ocean" value="The Atlantic Ocean">
+        <label for="first_ocean">The Atlantic Ocean</label>
+
+        <input type="checkbox" name="spaces" id="second_ocean" value="The Arctic Ocean">
+        <label for="second_ocean">The Arctic Ocean</label>
+
+        <input type="checkbox" name="spaces" id="third_ocean" value="Pacific ocean">
+        <label for="third_ocean">Pacific ocean</label>
+      </section>
+
+      <section>
+        <span>Show extinct species?</span>
+        <br>
+        <input type="radio" name="extinct_species" id="yes" value="Yes">
+        <label for="extinct_species">Yes</label>
+
+        <input type="radio" name="extinct_species" id="no" value="No">
+        <label for="extinct_species">No</label>
+      </section>
+      <hr>
+
+      <section class="submission">
+        <input type="submit" value="Find it">
+      </section>
+    </form>
+  </section>
+</body>
