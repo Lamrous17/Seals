@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: normal;
+  src: url('/drive-download-20221114T115223Z-001/NeueMachina-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: lighter;
+  src: url('/drive-download-20221114T115223Z-001/NeueMachina-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMachina';
+  font-weight: bold;
+  src: url('/drive-download-20221114T115223Z-001/NeueMachina-Ultrabold.otf') format('opentype');
+}
+
+
+body {
+  padding-top: 70px;
+  font-family: NeueMachina, sans-serif;
+  background-color: #7BA9B1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+a:hover {
+  transform: scale(1.5);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.navList {
+  display: flex;
+  gap: 250px;
+  margin-bottom: 70px;
+}
+
+.navItem {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.logoItem {
+  text-transform: uppercase;
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.backgroundSeal {
+  width: 982px;
+  height: 652px;
+  left: 0;
+  top: 102px;
+  position: absolute;
+  z-index: 1;
+}
+
+.sealMainHeader {
+
+  font-size: 35px;
+  /* font-weight: 400; */
+  line-height: 39px;
+  margin-bottom: 28px;
+}
+
+.sealsLogo {
+  width: 49px;
+  height: 49px;
+}
+
+.sealsDescr {
+  margin-bottom: 270px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+
+.seal-finder-form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-header{
+  margin-bottom: 15px;
+}
+
+.type-label {
+
+}
+
+.type-input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.rarity-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.area-label {
+  margin-right: 5px;
+}
+
+.ocean-checkbox {
+  margin-right: 5px;
+}
+
+.extinct-radio {
+  margin-right: 5px;
+}
+
+.find-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.find-button:hover {
+  background-color: #585757;
+}
+
+/* -------------------------------- */
+
+.types-header{
+  font-size: 35px;
+  line-height: 39px;
+  margin-bottom: 28px;
+}
+
+.seal-name{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.seals-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+
+}
+
+.img-container{
+  padding: 45px;
+  display: inline-block;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  
+}
+
+.seal-photo{
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.seal-photo:hover{
+  transform: scale(1.2);
+}
+
+.back-btn{
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  max-width: 50px;
+  margin-right: auto;
+}
+
+.back-btn:hover{
+  background-color: #585757;
+  transform: scale(1);
+}

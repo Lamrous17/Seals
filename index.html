@@ -1,59 +1,75 @@
-<head>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Seals | Red Book</title>
-</head>
-<body>
-  <h1>Seals of the Red Book of Russia</h1>
-  <img src="logo.png" alt="The Red Book logo" id="logo">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Seals | Red Book</title>
+  </head>
 
-  <p>This is an annotated list of rare and endangered or extinct animals, plants and fungi.<br>
-      Some seal species are also on the verge of extinction. In this topic we will talk about them in more detail.</p>
+  <body class="sealsPage">
+    <img src="seals.jpg" alt="фон" class="backgroundSeal">
+    <div class="flexBox">
+      <ul class="navList">
+        <li class="navItem">
+          <a href="Types.html">Types</a>
+        </li>
+        <li class="navItem logoItem">
+          <img class="sealsLogo" src="logo.png" alt="The Red Book logo" id="logo">
+          <p>Seals</p>
+        </li>
+        <li class="navItem">
+          <a href="characteristics.html"> Characteristics</a>
+        </li>
+      </ul>
 
-  <section>
-    <form class="" action="index.html" method="post">
-      <h3>Find a seal species</h3>
-      <section>
-        <label for="typeenter">What kind of seal are you interested in?</label>
-        <input type="text" name="typeenter">
-      </section>
-      <hr>
+      <h1 class="sealMainHeader">Seals of the Red Book of Russia</h1>
 
-      <section>
-        <label for="rarity">Specify the rarity category</label>
-        <br>
-        <span>An endangered species</span>
-        <input type="range" name="raritycategory" value="3" min="0" max="4">
-        <span>A rare species</span>
-      </section>
-      <hr>
 
-      <section>
-        <span>Types of seals from which area are you interested in?</span>
-        <br>
-        <input type="checkbox" name="spaces" id="first_ocean" value="The Atlantic Ocean">
-        <label for="first_ocean">The Atlantic Ocean</label>
-
-        <input type="checkbox" name="spaces" id="second_ocean" value="The Arctic Ocean">
-        <label for="second_ocean">The Arctic Ocean</label>
-
-        <input type="checkbox" name="spaces" id="third_ocean" value="Pacific ocean">
-        <label for="third_ocean">Pacific ocean</label>
-      </section>
+      <p class="sealsDescr">This is an annotated list of rare and endangered or extinct animals, plants and fungi.<br>
+        Some seal species are also on the verge of extinction. In this topic we will talk about them in more detail.</p>
+        
 
       <section>
-        <span>Show extinct species?</span>
-        <br>
-        <input type="radio" name="extinct_species" id="yes" value="Yes">
-        <label for="extinct_species">Yes</label>
+        <form class="seal-finder-form">
+          <h2 class="form-header">Find a seal species</h2>
+          <div>
+            <label class="type-label" for="typeenter">What kind of seal are you interested in?</label>
+            <input class="type-input" type="text" maxlength="20" name="typeenter">
+          </div>
+          <hr>
 
-        <input type="radio" name="extinct_species" id="no" value="No">
-        <label for="extinct_species">No</label>
-      </section>
-      <hr>
+          <div>
+            <label class="rarity-label" for="rarity">Specify the rarity category</label>
+            <input class="rarity-slider" type="range" name="raritycategory" value="3" min="0" max="4">
+          </div>
+          <hr>
 
-      <section class="submission">
-        <input type="submit" value="Find it">
+          <div>
+            <label class="area-label" for="ocean">Types of seals from which area are you interested in?</label>
+            <select name="ocean" id="ocean">
+              <option class="ocean-checkbox" value="">Please select</option>
+              <option class="ocean-checkbox" value="atlantic">Atlantic Ocean</option>
+              <option class="ocean-checkbox" value="arctic">Arctic Ocean</option>
+              <option class="ocean-checkbox" value="pacific">Pacific Ocean</option>
+            </select>
+          </div>
+          <hr>
+          <div>
+            <span class="extinct-label">Show extinct species?</span>
+
+            <input class="extinct-radio" type="radio" name="extinct_species" id="yes" value="Yes">
+            <label for="extinct_species">Yes</label>
+
+            <input class="extinct-radio" type="radio" name="extinct_species" id="no" value="No">
+            <label for="extinct_species">No</label>
+          </div>
+          <hr>
+
+          <button class="find-button" type="submit">Find it!</button>
+        </form>
       </section>
-    </form>
-  </section>
-</body>
+
+    </div>
+
+  </body>
+
+  </html>
