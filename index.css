@@ -199,6 +199,8 @@ img {
   padding: 45px;
   display: inline-block;
   border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px #00000040;
   
 }
 
@@ -207,7 +209,7 @@ img {
 }
 
 .seal-photo:hover{
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
 .back-btn{
