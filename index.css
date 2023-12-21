@@ -128,9 +128,6 @@ img {
   margin-bottom: 15px;
 }
 
-.type-label {
-
-}
 
 .type-input {
   margin-top: 10px;
@@ -228,4 +225,109 @@ img {
 .back-btn:hover{
   background-color: #585757;
   transform: scale(1);
+}
+
+/* -------------------------------- */
+
+.characteristics_header{
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.gif_container{
+  background-color: #ccc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15px;
+  width: 700px;
+  height: 400px;
+  margin-bottom: 100px;
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.characteristics_cutegif{
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.gif_container:hover .hashtag{
+ bottom: 190px;
+}
+
+.hashtag{
+  position: absolute;
+  z-index: 3;
+  font-size: 50px;
+  color: #fff;
+  bottom: -55px;
+  transition: bottom 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.table_container{
+  border: 3px solid white;
+  border-radius: 32px;
+}
+
+.characteristics_table {
+  font-size: 30px;
+  border-collapse: collapse;
+}
+
+.characteristics_table th, td{
+  width: 50%;
+  padding: 15px 0px;
+  text-align: center;
+}
+.characteristics_table tbody tr{
+
+ border-top: 3px solid white;
+ border-bottom: 3px solid white;
+}
+
+.characteristics_table th{
+  text-transform: uppercase;
+} 
+
+.characteristics_table tbody tr td{
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.characteristics_table tbody tr td:hover{
+  background-color: #85cad0;
+}
+
+.characteristics_table tbody tr:nth-child(odd) td:nth-child(odd),
+.characteristics_table tbody tr:nth-child(even) td:nth-child(even)
+{
+  background-color: #D9D9D9;
+}
+.characteristics_table tbody tr:nth-child(odd) td:nth-child(odd):hover,
+.characteristics_table tbody tr:nth-child(even) td:nth-child(even):hover
+{
+  background-color: #85cad0;
+}
+
+.characteristics_table tbody tr:last-child td:first-child{
+  border-bottom-left-radius: 32px;
+  border: none;
+}
+.characteristics_table tbody tr:last-child td:last-child{
+  border-bottom-right-radius: 32px;
+  border: none;
+}
+
+.characteristics_table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.characteristics_seal{
+  width: 350px;
 }
