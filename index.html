@@ -1,75 +1,207 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html>
+
   <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Seals | Red Book</title>
-  </head>
+    <meta charset="utf-8">
+    <title>Seals of the Red Book</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"></head>
 
-  <body class="sealsPage">
-    <img src="seals.jpg" alt="фон" class="backgroundSeal">
-    <div class="flexBox">
-      <ul class="navList">
-        <li class="navItem">
-          <a href="Types.html">Types</a>
-        </li>
-        <li class="navItem logoItem">
-          <img class="sealsLogo" src="logo.png" alt="The Red Book logo" id="logo">
-          <p>Seals</p>
-        </li>
-        <li class="navItem">
-          <a href="characteristics.html"> Characteristics</a>
-        </li>
-      </ul>
+  <body>
 
-      <h1 class="sealMainHeader">Seals of the Red Book of Russia</h1>
+    <header class="hero">
 
+        <div class="container spacing">
+           
+            <h1 class="record-label-title">Seals of the Red Book</h1>
+            <h3>This is an annotated list of rare and endangered or extinct animals, plants and fungi.<br>
+                Some seal species are also on the verge of extinction. In this topic we will talk about them in more detail</h3>
+            <a href="#featured-seal-anchor" class="btn">habitats</a>
+            <a href="#species_of_seals" class="btn">Species of seals</a>
+            <a href="#gif_padding" class="btn">Save seals</a>
+            <a href="#rarity_category" class="btn">Rarity category</a>
+        </div>
+        
+    </header>
 
-      <p class="sealsDescr">This is an annotated list of rare and endangered or extinct animals, plants and fungi.<br>
-        Some seal species are also on the verge of extinction. In this topic we will talk about them in more detail.</p>
+      <main>
+
+        <section id = "gif_padding" class="featured">
+          <div class="gif_wrapper">  
+            <p class="left_text_gif">Help protect endangered seals! Their survival is vital to the ecosystem, and we must act to save these magnificent creatures. Learn about their needs and the threats they face, and support conservation efforts today. Join the movement to save them</p> 
+            <div id="gif_save_seals" class="gif_container" width="700" height="400">
+              <img class="characteristics_cutegif" src="images/cute-seal.gif">
+              <p class="hashtag">#Save_Seals</p>
+            </div>
+          </div>
+        </section>
+
         
 
-      <section>
-        <form class="seal-finder-form">
-          <h2 class="form-header">Find a seal species</h2>
-          <div>
-            <label class="type-label" for="typeenter">What kind of seal are you interested in?</label>
-            <input class="type-input" type="text" maxlength="20" name="typeenter">
+        <section class="seals_listed">
+            <div class="container">
+                <h2 id="species_of_seals" class="section-title">Species of seals listed in the Red Book</h2>
+            <div class="grid-lay">
+                <article class="species_of_seals_listed">
+                    <img src="images/Halichoerus_Grypus_Grypus.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Halichoerus Grypus Grypus</h3>
+                    <p class="seal_description">Inhabits the eastern North Atlantic &mdash; threatened by bycatch, habitat disturbance, and pollution</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+
+                <article class="species_of_seals_listed">
+                    <img src="images/Halichoerus_Grypus_Macrornyncnus.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Halichoerus Grypus Macrornyncnus</h3>
+                    <p class="seal_description">Found in the western North Atlantic &mdash; vulnerable due to entanglement and habitat degradation</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+
+                <article class="species_of_seals_listed">
+                    <img src="images/Monachus.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Monachus</h3>
+                    <p class="seal_description">Mediterranean, Hawaii, (extinct Caribbean) &mdash; critically endangered from habitat loss, human disturbance, and bycatch</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+
+
+                <article class="species_of_seals_listed">
+                    <img src="images/Phoca_Caspica.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Phoca Caspica</h3>
+                    <p class="seal_description">Caspian Sea &mdash; vulnerable due to pollution, hunting, and habitat degradation</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+
+                <article class="species_of_seals_listed">
+                    <img src="images/Phoca_Hispida_Botnica.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Phoca Hispida Botnica</h3>
+                    <p class="seal_description">Bothnian Bay &mdash; threatened by pollution and climate change impacting ice cover</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+
+                <article class="species_of_seals_listed">
+                    <img src="images/Phoca_Hispida_Ladogensis.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Phoca Hispida Ladogensis</h3>
+
+                    <p class="seal_description">Lake Ladoga &mdash; critically endangered due to extremely low numbers and environmental pressures</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+                <article class="species_of_seals_listed">
+                    <img src="images/Phoca_Vitulina_Stejnegeri.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Phoca Vitulina Stejnegeri</h3>
+
+                    <p class="seal_description">Japanese waters &mdash; threatened by bycatch and pollution</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+                <article class="species_of_seals_listed">
+                    <img src="images/Phoca_Vitulina_Vitulina_Baltic.jpg" alt="" class="seals-img">
+                    <h3 class="seal-title">Phoca Vitulina Vitulina Baltic</h3>
+
+                    <p class="seal_description">Baltic Sea &mdash; vulnerable due to pollution and changes in prey availability</p>
+                    <a href="#" class="btn">Read more</a>
+                </article>
+            </div>
+            </div>
+        </section>
+
+        <section class="featured">
+          <div class="container">
+              <h2 id="featured-seal-anchor" class="section-title">Seal habitats</h2>
+              <div class="split">
+                  <a href="#" class="seal_habitat_photo">
+                      <img src="images/atlantic.jpg" alt="" class="featured-img">
+                      <p class="featured-details"><span>Atlantic</span>&mdash; North and East Coast</p>
+                  </a>
+                  <a href="#" class="seal_habitat_photo">
+                      <img src="images/caspian_sea.jpg" alt="" class="featured-img">
+                      <p class="featured-details"><span>Caspian Sea</span>&mdash; Closed water bodies</p>
+                  </a>
+                  <a href="#" class="seal_habitat_photo">
+                      <img src="images/baltic_sea.jpg" alt="" class="featured-img">
+                      <p class="featured-details"><span>Baltic Sea</span></p>
+                  </a>
+                  <a href="#" class="seal_habitat_photo">
+                    <img src="images/mediterranean.jpg" alt="" class="featured-img">
+                    <p class="featured-details"><span>Mediterranean</span>&mdash; North and East Coast</p>
+                </a>
+                <a href="#" class="seal_habitat_photo">
+                    <img src="images/hawaii.jpg" alt="" class="featured-img">
+                    <p class="featured-details"><span>Hawaii</span>&mdash; Closed water bodies</p>
+                </a>
+                <a href="#" class="seal_habitat_photo">
+                    <img src="images/ladoga.jpg" alt="" class="featured-img">
+                    <p class="featured-details"><span>Lake Ladoga</span></p>
+                </a>
+                  <img class="characteristics_seal" src="images/final-seal.png" alt="seal">
+              </div>
           </div>
-          <hr>
+        </section>
 
-          <div>
-            <label class="rarity-label" for="rarity">Specify the rarity category</label>
-            <input class="rarity-slider" type="range" name="raritycategory" value="3" min="0" max="4">
-          </div>
-          <hr>
 
-          <div>
-            <label class="area-label" for="ocean">Types of seals from which area are you interested in?</label>
-            <select name="ocean" id="ocean">
-              <option class="ocean-checkbox" value="">Please select</option>
-              <option class="ocean-checkbox" value="atlantic">Atlantic Ocean</option>
-              <option class="ocean-checkbox" value="arctic">Arctic Ocean</option>
-              <option class="ocean-checkbox" value="pacific">Pacific Ocean</option>
-            </select>
-          </div>
-          <hr>
-          <div>
-            <span class="extinct-label">Show extinct species?</span>
 
-            <input class="extinct-radio" type="radio" name="extinct_species" id="yes" value="Yes">
-            <label for="extinct_species">Yes</label>
+        <section id = "rarity_category">
+            <div class="table_container">
+                <table class="characteristics_table">
+                  <thead>
+                    <tr>
+                      <th>Type of seal</th>
+                      <th>Rarity category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Monachus</td>
+                      <td>0 – probably disappeared</td>
+                    </tr>
+                    <tr>
+                      <td>Phoca Caspica</td>
+                      <td>3 — rare</td>
+                    </tr>
+                    <tr>
+                      <td>Halichoerus Grypus Grypus</td>
+                      <td>3 — rare</td>
+                    </tr>
+                    <tr>
+                      <td>Halichoerus Grypus Macrornyncnus</td>
+                      <td>1 – endangered species</td>
+                    </tr>
+                    <tr>
+                      <td>Phoca Vitulina Stejnegeri</td>
+                      <td>3 — rare</td>
+                    </tr>
+                    <tr>
+                      <td>Phoca Vitulina Vitulina Baltic</td>
+                      <td>1 – endangered species</td>
+                    </tr>
+                    <tr>
+                      <td>Phoca Hispida Botnica</td>
+                      <td>2 – declining in numbers</td>
+                    </tr>
+                    <tr>
+                      <td>Phoca Hispida Ladogensis</td>
+                      <td>3 — rare</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </section>
 
-            <input class="extinct-radio" type="radio" name="extinct_species" id="no" value="No">
-            <label for="extinct_species">No</label>
-          </div>
-          <hr>
+      </main>
 
-          <button class="find-button" type="submit">Find it!</button>
-        </form>
-      </section>
-
-    </div>
+      <footer>
+        <div class="footer-container">
+            <div class=".footer-section-left">
+                <div class="footer-section name">
+                   <b><p>Save seals</p></b> 
+                </div>
+                
+            </div>
+            <p class="footer-section">For all questions nastiaaat@tpu.ru</p>
+        </div>
+      </footer>
 
   </body>
 
-  </html>
+</html>
